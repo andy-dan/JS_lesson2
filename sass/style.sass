@@ -1,0 +1,391 @@
+$gray: #313234
+$gray-hover: #3a3b3d
+$gray-banner: #9ea3a3
+$blue-main: #3dc9cc
+$bgcol-copyrights: #1d1d1e
+
+*
+	box-sizing: border-box
+
+body 
+	margin: 0
+	font-family: Open Sans
+		
+.container 
+	max-width: 1200px
+	margin: 0 auto
+
+.row
+	&:before,
+	&:after 
+		content: ""
+		display: table
+		clear: both
+
+header
+	background-color: $gray
+	height: 50px
+	background-color: rgba(0, 0, 0, 0.5)
+	
+	>nav 
+		img 
+			padding: 10px 0	
+	
+	>nav ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		float: right
+		
+		>li
+			display: inline-block
+			
+			>a 
+				line-height: 50px
+				padding: 0 20px
+				display: block
+				color: #fff
+				text-decoration: none 
+				text-transform: uppercase
+				&:hover
+					background-color: $gray-hover
+					color: $blue-main
+
+.hero 
+	background-image: url("https://images.unsplash.com/photo-1472577938094-84871b72ccac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=98446c7767b9f4ae362ee1aedbbf6ef2")
+	height: 250px
+	background-size: cover
+			
+			
+.slogan 
+	background-color: rgba(0,0,0,0.5)
+	float: right
+	max-width: 800px
+	color: white
+	font-size: 1.5rem
+	padding: 10px
+	text-transform: uppercase
+	margin: 25px 0 25px
+
+.font 
+	font-weight: bold
+
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+
+[class*='col-'] 
+	float: left
+	min-height: 1px
+
+
+section
+	>.container
+		margin: 50px auto
+		text-align: center
+
+
+.fa-calendar, 
+.fa-bell-o, 
+.fa-archive 
+	color: white
+	background-color: black
+	border: 10px black solid	
+	
+.icons 
+	.fa 
+		font-size: 70px
+		border-radius: 6px
+
+	&:hover 
+		p
+			color: $blue-main
+	&:hover
+		h3
+			color: $blue-main
+			
+	&:hover 
+		.fa
+			background-color: $blue-main
+			border: 10px $blue-main solid
+			color: white
+			
+.stat
+	h3
+		color: $blue-main
+
+.works h3,
+.profit h3,
+h4, 
+.stat h3
+	text-transform: uppercase
+
+.works 
+	text-align: center
+	margin: 0 30% 30px
+	
+.gallery
+	margin-bottom: 40px
+	
+.gallery-item 
+	position: relative
+						
+.gallery 
+	img:not(.double) 
+		box-sizing: border-box
+		float: left
+		width: 100%
+		object-fit: cover		
+		
+.double 
+	box-sizing: border-box
+	float: left
+	width: 100%
+	height: 200px
+	object-fit: cover
+
+.layer 
+	height: 100%
+	width: 100%
+	box-sizing: border-box
+	position: absolute
+	opacity: 0
+	
+.layer
+	&:hover 
+		background-color: rgba(0,0,0,0.5)
+		opacity: 1
+		cursor: pointer
+	
+	.fa
+		position: absolute
+		display: block
+		background-color: white
+		border: 5px white solid
+		border-radius: 3px
+	
+.icon
+	top: 50%
+	transform: translate(-50%, -50%)
+    
+.left
+	@extend .icon
+	left: 30%
+    
+.right
+	@extend .icon
+	left: 70%
+    
+.team div 
+	max-width: 800px
+	margin: 15px auto
+	display: block
+	text-align: center
+	box-sizing: border-box
+	
+.slim
+	max-width: 800px
+	margin: 15px auto
+		  
+.stf 
+	position: relative
+	box-sizing: border-box
+	max-height: 200px
+	text-align: center
+	
+.pic 
+	width: 150px
+	height: 150px
+	border-radius: 50%
+	display: inline-block       
+    
+	img 
+		border-radius: 50%
+    	
+.lyr 
+	position: absolute
+	width: 150px
+	height: 150px
+	top: 0
+	left: 50%
+	border-radius: 50%
+	transform: translate(-50%, 0)
+	opacity: 0
+    
+	&:hover 
+		background-color: rgba(0,0,0,0.5)
+		opacity: 1
+                  
+.txt 
+	position: absolute
+	display: inline
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	color: white
+	font-weight: bold
+    
+.name 
+	text-align: center
+	
+.banner 
+	height: 300px
+	background-color: $gray-banner
+	margin: 20px auto
+
+	img 
+		height: 250px
+		width: 250px
+		position: relative
+		left: 30%
+		top: 50px
+		
+.scd-col 
+	color: white
+	margin: 0 auto
+			
+.stat div
+	max-width: 800px
+	text-align: center
+	margin: 0 auto
+		
+.numb p
+	font-size: 50px
+	font-weight: 900
+	line-height: 0.2
+	margin: 20px auto
+
+footer 
+	background-color: $gray
+	color: white
+		
+.foot
+	margin: 0 auto
+	padding: 15px 50px
+	
+.ctc p
+	font-weight: bold
+	margin: 0
+	
+.ctc2 p
+	margin: 0
+	
+.cpr 
+	text-align: center
+	background-color: bgcol-copyrights
+	
+.foot i 
+	font-size: 40px
+	color: $blue-main
+
+.foot h4 
+	display: flex
+	align-items: center
+	&:after 
+		content: ""
+		border: white solid 1px
+		display: block
+		width: 150px
+		margin-left: 10px
+	
+@media (max-width: 480px) 
+	
+	header
+		height: auto
+		
+		>nav
+			text-align: center
+			
+			img 
+				padding: 5px
+				text-align: center
+			
+			ul 
+				float: none
+				
+				li 
+					display: block
+															
+	[class*='col-'] 
+		width: 100%
+								
+	section
+		>.container 
+			margin: 20px auto 0
+	
+	.lyr 
+		opacity: 1
+	
+	.txt 
+		top: 80%
+		
+	.layer 
+		opacity: 1
+	
+	.banner 
+		height: auto
+		text-align: justify
+		padding: 5px
+		
+		img 
+			height: 250px
+			width: 80vw
+			position: relative
+			left: 7vw
+			top: 10px
+					
+	.foot 
+		padding: 15px 10px
+		
+	.hero 
+		height: 150px
+	
+	.slogan 
+		font-size: 0.8rem
+		margin: 15px 0 15px
+								
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
